@@ -1,0 +1,49 @@
+Name: Siddharth Srivastava
+Roll No: 2201CS86
+Course: CS209-CS210 Computer Organization and Architecture
+
+Declaration of Authorship:
+This txt file, claims.txt, is part of the assignment of CS209-CS210 at the 
+department of Computer Science and Engg, IIT Patna .
+
+The files contained in the project folder all belong to the aforementioned author and are single-handedly made without any help from outside sources.
+==================================================================================================================
+
+Assembler-
+The assembler:
+    * uses a single routine for both passes.
+    * detects errors related to nomenclature of labels
+    * consistent and sensible formatting with sensible program structure. 
+    * sensible variable, function & type names with explanatory comments.
+	* produces a listing file.
+	* assembles test programs.
+
+Structure of assembler-
+1. The assembler works in two passes.
+2. The assembler checks for syntactical errors in pass1-such as invalid mnemonics or labels, or missing labels/duplicate labels.
+3. The assembler checks for semantical errors in pass2- such as invalid operands/instructions.
+4. Errors, if any, are mentioned in the logfile.
+5. Object file and listing file are generated if the code compiles successfully.
+6. Sensible Nomenclature of variables and comments.
+
+Emulator-
+* loads object file, 
+    * by giving the instructions like "-before/-after" , the program can produce memory dump before/after execution.
+    * by giving the instruction like "-trace", the program prints the result of program executed.
+   
+Structure of emulator-
+1. uses mem_tab for representing memory.
+2. displays the memory dump of objects after instructions are executed.
+3. processes and executes instructions with the help of a series of functions.
+4. produces trace file after giving "-trace" instruction.
+
+Tests provided-
+1. Bubble sort- Assembles.
+2. Customtest1_error- a file that has errors to depict the error handling of assembler.cpp.
+3. Customtest2- a file that has code to add two numbers.
+4. Customtest3- a file that contains code to find perimeter of a rectangle.
+5. Customtest4- a file that contains code to run a loop 999 times.
+
+All the above files are provided with their object files, listing files, log files and trace files .
+
+
